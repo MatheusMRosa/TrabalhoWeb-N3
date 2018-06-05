@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import AddNewTodo from './../../UI/addNewToDo';
-const mapStateToProps = state => ({
-})
-const mapDispatchToProps = {
-}
-export default connect(mapStateToProps, mapDispatchToProps)(AddNewTodo);
+import {reduxForm} from 'redux-form';
+import {addNewToDo} from './addNewToDoActions';
+
+import AddNewToDo from '../../UI/AddNewToDo';
+
+const mapStateToProps = state => ({});
+
+const mapDispatchToProps = ({
+    addNewToDo
+});
+
+export default reduxForm({ form: 'AddNewToDoForm' })(connect(mapStateToProps, mapDispatchToProps)(AddNewToDo))
