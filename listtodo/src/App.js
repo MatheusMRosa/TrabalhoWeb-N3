@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import './App.css';
 import AddNewTodo from './module/addNewToDo/addNewToDo';
 import ListToDo from './module/listToDo/listToDo';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div>
                 <AddNewTodo/>
                 <ListToDo/>
             </div>
