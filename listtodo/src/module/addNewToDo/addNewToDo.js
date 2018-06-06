@@ -4,7 +4,9 @@ import {addNewToDo} from './addNewToDoActions';
 
 import AddNewToDo from '../../UI/AddNewToDo';
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+    someName: state.listToDo.someName
+});
 
 const mapDispatchToProps = ({
     addNewToDo

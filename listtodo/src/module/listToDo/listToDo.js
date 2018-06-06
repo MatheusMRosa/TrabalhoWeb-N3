@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { alterStatusToDo } from './listToDoActions';
+import { alterStatusToDo, deleteToDo } from './listToDoActions';
 import ListToDo from '../../UI/ListToDo';
 
 const mapStateToProps = state => ({
@@ -7,7 +7,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = ({
-    alterStatusToDo
+    alterStatusToDo,
+    deleteToDo
 });
 
 
