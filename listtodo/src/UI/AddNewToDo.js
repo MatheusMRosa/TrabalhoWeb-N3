@@ -7,7 +7,7 @@ const AddNewToDo = props => {
         addNewToDo(value);
     };
     return (
-        <div className="container">
+        <div className="container" style={{marginTop: 25}}>
             <div className="form-inline">
                 <div className="form-group mb-2">
                     <label className="form-control-plaintext">Write a title for your "TODO"</label>
