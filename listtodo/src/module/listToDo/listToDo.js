@@ -3,7 +3,7 @@ import { alterStatusToDo, deleteToDo } from './listToDoActions';
 import ListToDo from '../../UI/ListToDo';
 
 const mapStateToProps = state => ({
-    list: state.listToDo.list
+    list: state.listToDo.copyList
 });
 
 const mapDispatchToProps = ({
