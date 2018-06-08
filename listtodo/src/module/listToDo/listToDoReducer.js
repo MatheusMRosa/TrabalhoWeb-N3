@@ -15,7 +15,7 @@ export default (state = DEFAULT_STATE, {type, payload}) => {
                     return {...state, someName: true}
                 }
             }
-            return {...state, list: [...state.list, payload], copyList: [...state.list, payload], someName: false};
+            return {...state, list: [...state.list, payload], copyList: [...state.copyList, payload], someName: false};
         case ALTER_STATUS_TO_DO:
             for (let i in state.copyList) {
                 if (state.copyList[i].name === payload.item.name) {
