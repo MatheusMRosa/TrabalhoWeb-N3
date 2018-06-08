@@ -10,7 +10,7 @@ const DEFAULT_STATE = {
 export default (state = DEFAULT_STATE, {type, payload}) => {
     switch (type) {
         case ADD_NEW_TO_DO:
-            for (let item of state.list) {
+            for (let item of state.copyList) {
                 if (item.name === payload.name) {
                     return {...state, someName: true}
                 }
