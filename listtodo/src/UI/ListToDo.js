@@ -7,8 +7,8 @@ const ListToDo = props => {
             <div className="table table-active">
                 {list.length > 0 ?
                     <div className="row">
-                        <div className="col"><h5 className="shadow p-3 bg-dark rounded" style={{color: 'white'}}># Name
-                            of To Do</h5></div>
+                        <div className="col"><h5 className="shadow p-3 bg-dark rounded" style={{color: 'white'}}>
+                        # Name of To Do</h5></div>
                     </div>
                     :
                     <small className="form-text text-muted">No to do Found</small>
